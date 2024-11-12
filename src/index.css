@@ -51,6 +51,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -136,4 +137,38 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+/* Media query */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    word-spacing: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list ul {
+    width: 90%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+
+  .add-form,
+  .stats {
+    padding: 2rem 0;
+  }
+
+  button,
+  select,
+  input {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
 }
